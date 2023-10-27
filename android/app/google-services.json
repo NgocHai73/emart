@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "648029453661",
+    "project_id": "e-mart-6396e",
+    "storage_bucket": "e-mart-6396e"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648029453661:android:2aabeb1b266df1055afcb4",
+        "android_client_info": {
+          "package_name": "com.example.emart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYvP2ojKt6UfzSv1Zl89RrbpyPDtf8JUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

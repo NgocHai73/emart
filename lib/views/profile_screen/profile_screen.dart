@@ -43,9 +43,9 @@ class ProfileScreen extends StatelessWidget {
                           color: whiteColor,
                           size: 20,
                         )).onTap(() {
-                          controller.profileImage.value = data['imageURL'];
+                      controller.profileImage.value = data['imageURL'];
                       controller.nameController.text = data['name'];
-                      controller.passController.text = data['password'];
+
                       Get.to(() => EditProfile(data: data));
                     }),
                   ),
@@ -60,7 +60,7 @@ class ProfileScreen extends StatelessWidget {
                                 .roundedFull
                                 .clip(Clip.antiAlias)
                                 .make()
-                            : Image.file(File(data['imageURL']),
+                            : Image.network(data['imageURL'],
                                     width: 100, fit: BoxFit.cover)
                                 .box
                                 .roundedFull

@@ -48,8 +48,8 @@ class EditProfile extends StatelessWidget {
                         width: 100,
                         fit: BoxFit.cover,
                       ).box.roundedFull.clip(Clip.antiAlias).make()
-                    : Image.file(
-                        File(controller.profileImage.value),
+                    : Image.network(
+                        (controller.profileImage.value),
                         width: 100,
                         fit: BoxFit.cover,
                       ).box.roundedFull.clip(Clip.antiAlias).make(),
@@ -70,12 +70,14 @@ class EditProfile extends StatelessWidget {
               title: "Name",
               isPass: false,
             ),
+            10.heightBox,
             customTextField(
               controller: controller.passController,
-              hint: "Enter Your Password",
-              title: "Password",
+              hint: "Enter  Password",
+              title: " Password ",
               isPass: false,
             ),
+            10.heightBox,
             20.heightBox,
             controller.isloading.value
                 ? CircularProgressIndicator(
